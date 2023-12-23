@@ -23045,6 +23045,7 @@ const hz = ({ infoVisible: e, setInfoVisible: t }) => {
         V(gv, {
           children: V(Nk, {
             lockScroll: !0,
+            className: "useful-controls-dialog-overlay",
             "data-open": e,
             style: s,
             children: V(Mk, {
@@ -23052,16 +23053,20 @@ const hz = ({ infoVisible: e, setInfoVisible: t }) => {
               children: we("div", {
                 ref: n.setFloating,
                 ...a(),
+                className: "useful-controls-dialog",
                 style: s,
                 children: [
                   we("div", {
+                    className: "useful-controls-dialog-title",
                     children: [
                       V("p", {
+                        children: ot.ui_usefulcontrols || "Useful controls",
                       }),
                       V("div", {
+                        className: "useful-controls-dialog-close",
                         onClick: () => t(!1),
                         children: V("svg", {
-                          xmlns: "",
+                          xmlns: "http://www.w3.org/2000/svg",
                           height: "1em",
                           viewBox: "0 0 400 528",
                           children: V("path", {
@@ -23072,6 +23077,7 @@ const hz = ({ infoVisible: e, setInfoVisible: t }) => {
                     ],
                   }),
                   we("div", {
+                    className: "useful-controls-content-wrapper",
                     children: [
                       we("p", {
                         children: [
@@ -23108,7 +23114,10 @@ const hz = ({ infoVisible: e, setInfoVisible: t }) => {
                           ot.ui_ctrl_shift_lmb,
                         ],
                       }),
-                      V("div", { style: { textAlign: "right" }, children: "" }),
+                      V("div", {
+                        style: { textAlign: "right" },
+                        children: "🐂",
+                      }),
                     ],
                   }),
                 ],
@@ -23174,11 +23183,12 @@ const hz = ({ infoVisible: e, setInfoVisible: t }) => {
           }),
         }),
         // V("button", {
+        //   className: "useful-controls-button",
+        //   onClick: () => r(!0),
         //   children: V("svg", {
         //     xmlns: "http://www.w3.org/2000/svg",
-        //     height: "0",
-        //     opacity: "0%",
-        //     viewBox: "0 0 924 924",
+        //     height: "2em",
+        //     viewBox: "0 0 524 524",
         //     children: V("path", {
         //       d: "M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z",
         //     }),
@@ -23199,9 +23209,9 @@ const hz = ({ infoVisible: e, setInfoVisible: t }) => {
     return `rgb(${r}, ${i}, ${l})`;
   },
   Pi = {
-    primaryColor: [93, 154, 223],
-    secondColor: [93, 154, 223],
-    accentColor: [93, 154, 223],
+    primaryColor: [231, 76, 60],
+    secondColor: [39, 174, 96],
+    accentColor: [211, 84, 0],
   },
   yv = ({ percent: e, durability: t }) => {
     const n = be.useMemo(

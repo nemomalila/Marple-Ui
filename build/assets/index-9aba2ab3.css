@@ -42,10 +42,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 .context-menu-list {
     min-width: 200px;
-    background-color: #5d9adf;
+    background-color: #ffffff4b;
     color: #ffffff;
     padding: 4px;
-    border-color: #ffffff00;
+    border-color: rgba(255, 255, 255, 0);
     border-style: inset;
     border-width: 1px;
     border-radius: 4px;
@@ -71,7 +71,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .context-menu-item:hover {
-    background-color: #5d9adf;
+    background-color: #ffffff00;
     cursor: pointer
 }
 
@@ -141,13 +141,13 @@ button:active {
 
 .inventory-control .inventory-control-button {
     font-size: 14px;
-    color: #fff;
+    color: #ffffff;
     background-color: #ffffff4b;
     transition: .2s;
     padding: 12px 8px;
     border-radius: 2.5%;
     border: none;
-    /* text-transform: lowercase; */
+    text-transform: uppercase;
     font-family: Roboto;
     width: 100%;
     font-weight: 500
@@ -155,12 +155,6 @@ button:active {
 
 .inventory-control .inventory-control-button:hover {
     background-color: #ffffff4b
-}
-
-.divider {
-    width: 100%;
-    height: 1px;
-    background-color: rgb(255, 255, 255)
 }
 
 .inventory-grid-wrapper {
@@ -205,7 +199,7 @@ button:active {
 }
 
 .inventory-slot-label-box {
-    background-color: #5d9adf;
+    background-color: #ffffff00;
     color: #ffffff;
     text-align: center;
     border-bottom-left-radius: .25vh;
@@ -281,7 +275,7 @@ button:active {
 
 .item-slot-currency-wrapper p {
     font-size: 14px;
-    text-shadow: .1vh .1vh 0 #5d9adf;
+    text-shadow: .1vh .1vh 0 #ffffff4b
 }
 
 .item-slot-price-wrapper {
@@ -293,13 +287,13 @@ button:active {
 
 .item-slot-price-wrapper p {
     font-size: 14px;
-    text-shadow: .1vh .1vh 0 #5d9adf;
+    text-shadow: .1vh .1vh 0 #ffffff00
 }
 
 .tooltip-wrapper {
     pointer-events: none;
     display: flex;
-    background-color: #5d9adf;
+    background-color: #ffffff4b;
     width: 200px;
     padding: 8px;
     flex-direction: column;
@@ -307,7 +301,7 @@ button:active {
     color: #ffffff;
     font-family: Roboto;
     border-radius: 4px;
-    border-color: #5d9adf00;
+    border-color: #ffffff00;
     border-style: inset;
     border-width: 1px
 }
@@ -397,8 +391,8 @@ button:active {
 .item-notification-action-box {
     width: 100%;
     color: #ffffff;
-    background-color: #5d9adf;
-    text-transform: uppercase;
+    background-color: #ffffff4b;
+    text-transform: lowercase;
     text-align: center;
     border-top-left-radius: .25vh;
     border-top-right-radius: .25vh;
